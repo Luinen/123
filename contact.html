@@ -7,27 +7,55 @@
 	<meta name="keywords" content="hospital, private, examinations, doctors, the best">
 	<meta name="author" content="Best Dublin Private Hospital">
     <link rel="stylesheet" href="css/style.css">
-    <title>First Portfolio</title>
+    <title>Taoiseach Clinic</title>
 </head>
 <body>
     <header>
         <h1>Contact</h1>
     </header>
-    <nav>
-        <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="pricelist.html">Pricelist</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="survey.html">Survey</a></li>
-        </ul>
-    </nav>
-    <h1>Contact</h1>
-    <p>Email address: bestprivatehospital@gmail.com</p>
-    <p>Phone number: (01) 999 9999</p>
-    <p>Address: </p>
-    <p>Opening hours: 7/24</p>
-    
-    <!-- make an appointment-->
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="pricelist.html">Pricelist</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    <section>    
+        <h1>Contact</h1> 
+        <p>Email address: bestprivatehospital@gmail.com</p>
+        <p>Phone number: (01) 999 9999</p>
+        <p>Address: 3 Rainbow street, Dublin, Co.Dublin</p>
+        <p>Opening hours: 7/24</p>
+        <h2>Make an appointment</h2>
+        <form action="thankyou.html" method="GET" target="_blank">
+            
+                <label for="name">Full Name: </label>
+                <br>
+                <input id="name-field" type="text" name="name" placeholder="John O'reilly">
+            <div>
+                <br>
+                <label for="email">Email Address: </label>
+                <br>
+                <input id="email-field" type="email" name="email" placeholder="johnoreilly@gmail.com">
+            </div>  
+            <br>  
+            <div>
+                <label for="appointment">Appointment: </label>
+                <input type="date" id="appointment" name="appointment">
+            </div>
+            <br>
+                <label for="textarea">Anything we should know about you?</label>
+                <br>
+                <textarea id="textarea" placeholder="You can leave any message here" name="textarea" cols="70" rows="5"></textarea>
+                <br>
+            <div>
+                <br>
+                <label for="submit"></label>
+                <input type="submit" id="submit">
+            </div>
+        </form>
+        <p>We appreciate your time to fill out our survey</p>
+    </section>
+    <footer>phone, email, follow us: googlemaps, facebook, twitter, linkedin, webdevelopment by Lui Peto</footer>
 </body>
 </html>

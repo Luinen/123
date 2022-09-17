@@ -1,23 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
 header {
     text-align: center;
-    background-image: url(https://www.healthcareitnews.com/sites/hitn/files/doctor-patient-712_1_0.jpg)
+    background-image: url(https://www.healthcareitnews.com/sites/hitn/files/doctor-patient-712_1_0.jpg);
+    height: 200px;
 }
 
 body {
-    background-color: #9ee0cc;
+    background-color: #baf7ed;
+    color: black;
 }
+section {
+    margin-left: 16px;
+}
+
+a:visited, a:link {
+    color: #4b9193;
+}
+
+a:hover {
+    color: yellow;
+}
+
+
 
 nav ul {
     list-style: none;
     text-align: center;
     font-size: 25px;
+    color: #4b9193;
+
 }
 
 nav li {
     display: inline-block;
     padding-left: 80px;
     padding-right: 80px;
-    margin: 50px auto;
+    margin: 25px 25px;
 }
 
 input[type=text], input[type=email] {
