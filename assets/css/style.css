@@ -59,8 +59,12 @@ section {
 }
 
 h2 {
-    margin-top: 30px;
+    margin-top: 28px;
     margin-bottom: 15px;
+}
+
+h4 {
+    text-transform: capitalize;
 }
 
 p {
@@ -69,7 +73,7 @@ p {
 }
 
 #book {
-    margin-left: 48%;
+    margin-left: 44%;
     padding: 5px;
     font-size: 22px;
     font-family: Verdana, Geneva, sans-serif;
@@ -87,7 +91,7 @@ span {
 }
 
 input[type=text], input[type=email] {
-    width: 200px;
+    width: 207px;
 }
 
 input[type=submit] {
@@ -122,7 +126,7 @@ footer > a {
 }
 
 .lastbottom {
-    margin-bottom: 46px;
+    margin-bottom: 47px;
 }
 
 #webdev {
