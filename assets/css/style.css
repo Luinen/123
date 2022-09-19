@@ -16,7 +16,7 @@ header > h1 {
 body {
     background-color: white;
     color: black;
-    font-family: Helvetica, Ariel, serif;
+    font-family: Helvetica, Ariel, sans-serif;
 }
 
 .topnav {
@@ -34,7 +34,7 @@ a:visited, a:link {
 }
 
 a:hover {
-    color: #f3ce25;
+    color: #ef7c10;
 }
 
 nav ul {
@@ -54,6 +54,33 @@ nav li {
     margin: 15px 25px 35px;
 }
 
+@media screen (max-width: 950px) {
+    nav li {
+        width: 65%;
+        height: 950px;
+        margin: 0 auto;
+        padding: 0 10px;
+    }
+}
+
+@media screen (min-width: 600px;) {
+    nav li {
+        width: 65%;
+        height: 950px;
+        margin: 0 auto;
+        padding: 0 10px;
+    }
+}
+    
+}
+
+@media (min-width: 900px) {
+    .services-layout {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
 section {
     margin-left: 1.5%;
 }
@@ -65,11 +92,16 @@ h2 {
 
 h4 {
     text-transform: capitalize;
+    margin-bottom: 10px;
 }
 
 p {
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+h4 ~ p {
+    width: 300px;
 }
 
 #book {
@@ -88,6 +120,23 @@ span {
     font-family: Cambria;
     font-weight: 1000;
     vertical-align: 1px;
+}
+
+.services-layout {
+    max-width: 1300px;
+    margin: 40px auto 0 auto;
+}
+
+.services {
+    padding: 1rem;
+    text-align: justify;
+    box-sizing: border-box;
+    flex-basis: 30%;
+}
+
+img {
+    height: 200px;
+    width: 300px;
 }
 
 input[type=text], input[type=email] {
@@ -122,17 +171,23 @@ footer {
 
 footer > a {
     padding: 0 20px;
-
 }
 
 .lastbottom {
     margin-bottom: 47px;
 }
 
-#webdev {
+.webdev {
     margin:auto;
     text-align: right;
     color: white;
+}
+
+#ty_doctor {
+    margin-left: 40%;
+    margin-top: 20px;
+    height: 350px;
+    width: 350px;
 }
 
 .thankyou {
