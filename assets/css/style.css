@@ -63,17 +63,6 @@ nav li {
     }
 }
 
-@media screen (min-width: 600px;) {
-    nav li {
-        width: 65%;
-        height: 950px;
-        margin: 0 auto;
-        padding: 0 10px;
-    }
-}
-    
-}
-
 @media (min-width: 900px) {
     .services-layout {
         display: flex;
