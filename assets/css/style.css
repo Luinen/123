@@ -13,6 +13,7 @@ header {
 header>h1 {
     text-align: left;
     color: #4b9193;
+    letter-spacing: 2px;
 }
 
 body {
@@ -22,9 +23,10 @@ body {
 }
 
 .topnav {
-    height: 600px;
-    width: 100%;
+    height: 200;
+    width: 200;
     background-repeat: no-repeat;
+    float: right;
 }
 
 a:visited,
@@ -36,24 +38,28 @@ a:hover {
     color: #ef7c10;
 }
 
-nav ul {
-    list-style: none;
-    text-align: center;
-    font-size: 25px;
-    color: #4b9193;
-    background-color: #a3e4d7;
-    height: 60px;
-    border-bottom: solid black;
+.nav {
+    max-width: 1400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-nav li {
-    display: inline-block;
-    padding: 0 80px;
-    margin: 15px 25px 35px;
+nav ul {
+    list-style: none;
+    font-size: 25px;
+    color: #4b9193;
+    border-bottom: solid black;
 }
 
 section {
     margin-left: 1.5%;
+}
+
+h2, h4 {
+    color: #4b9193;
+    font-weight: 700px;
+    letter-spacing: 3px;
 }
 
 h2 {
