@@ -85,12 +85,12 @@ I used lighthouse to check the performance of my home page for mobile devices an
 
     - I put the id in the span, and the content's left margin was clickable when I centred it. After I put in the parent element(div), it solved the problem.  
 
-  ```
-  <div>
+    ```
+    <div>
       <a href="contact.html">
           <span id="book">Book an appointment</span></a>
-  </div>
-  ```
+    </div>
+    ```
 
   - Pricelist page valiadation
     - no errors were returned when passing through the w3c validator
@@ -98,11 +98,11 @@ I used lighthouse to check the performance of my home page for mobile devices an
   - Contact page validation
     - I forgot to close the anchor element, so any time I clicked on the form (name, email or textarea), a link opened in a new tab. After I closed it, it did not cause more problems.
 
-```
-<div>
-<a href="">
-</div>
-```
+    ```
+    <div>
+    <a href="">
+    </div>
+    ```
 - After these mistakes were fixed, no errors were returned when passing through the official [W3c validator](https://validator.w3.org/)
 
 - **CSS**
