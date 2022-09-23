@@ -81,8 +81,8 @@ section {
 h2,
 h4 {
     color: #4b9193;
-    font-weight: 700px;
     letter-spacing: 3px;
+    font-weight: 700;
 }
 
 h2 {
@@ -151,7 +151,8 @@ img {
 /*pricelist section*/
 
 table {
-    width: 50%;
+    width: 40%;
+    min-width: 350px;
 }
 
 th,
@@ -159,11 +160,37 @@ td {
     text-align: left;
 }
 
-/*contact us section*/
+th {
+    padding-bottom: 20px;
+}
+
+.price-h2 {
+    margin-left: 15%;
+}
+
+.price-layout {
+    max-width: 1000px;
+    margin: 40px auto 0 auto;
+}
+
+.price-table {
+    padding: 1rem;
+    text-align: justify;
+    box-sizing: border-box;
+    flex-basis: 30%;
+}
+
+/*contact section*/
 
 input[type=text],
 input[type=email] {
     width: 207px;
+}
+
+input:focus,
+textarea:focus {
+    border: 3px solid #ef7c10;
+    outline: none;
 }
 
 input[type=submit] {
@@ -178,7 +205,7 @@ input[type=submit] {
 /*footer*/
 
 footer {
-    background-color: #a3e4d7;
+    background-color: #bff5ea;
     width: 100%;
     padding-top: 4px;
     bottom: 0;
@@ -189,16 +216,22 @@ footer {
 
 footer>a {
     padding: 0 20px;
+    transition: 0.4s;
+    border-radius: 99px;
+}
+
+footer a:hover {
+    background-color: beige;
 }
 
 .lastbottom {
-    margin-bottom: 47px;
+    margin-bottom: 30px;
 }
 
 .webdev {
     margin: auto;
     text-align: right;
-    color: white;
+    color: #4b9193;
 }
 
 /*thankyou_html*/
@@ -220,13 +253,13 @@ footer>a {
 
 /*media queries*/
 
-@media (max-width: 950px) {
+@media (max-width: 1030px) {
     h1 {
         font-size: 20px;
     }
 
     nav {
-        font-size: 15px;
+        font-size: 20px;
         padding: 16px 0;
     }
 
@@ -243,32 +276,72 @@ footer>a {
     }
 
     section .services-layout {
-        margin-left: 20%;
+        margin-left: 40%;
+    }
+
+    section .price-layout {
+        margin-left: 40%;
+    }
+}
+
+@media (max-width: 800px) {
+    section .services-layout {
+        margin-left: 25%;
+    }
+
+    section .price-layout {
+        margin-left: 15%;
     }
 }
 
 @media (max-width: 550px) {
+    nav {
+        font-size: 15px;
+        padding: 16px 0;
+    }
+
     .botnav {
         height: 300px;
     }
-    section .services-layout {
-        margin-left: 12%;
-    }
+
     #book {
         margin-left: 22%;
     }
+
+    section .services-layout {
+        margin-left: 12%;
+    }
+
+    .price-h2 {
+        margin-left: 5%;
+    }
+
+    section .price-layout {
+        margin-left: 5%;
+    }
+
+    textarea {
+        width: 100%;
+    }
 }
 
-@media (min-width: 768px) {
+
+
+@media (min-width: 600px) {
     .menu {
         display: flex;
-        justify-content: space-around;
+        justify-content: flex-end;
         margin: 0 0;
     }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1030px) {
     .services-layout {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .price-layout {
         display: flex;
         justify-content: space-between;
     }

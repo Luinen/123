@@ -4,7 +4,7 @@
 **Welcome to [Taoiseach Clinic](https://8000-luinen-123-hyc0nio3mvx.ws-eu64.gitpod.io/)!**
   
 
-This Readme provides an overview of what is the essence of the site. Taoiseach Clinic is a private hospital site where sick people can look for reliable treatment and high-qualified doctors in any case. It offers a wide variety of services and is available to anyone. Booking is simple and fast. 
+This Readme provides an overview of what is the essence of the site. Taoiseach Clinic is a private hospital site where sick people can look for reliable treatment and excellent staff members in any case. It offers a wide variety of services and is available to anyone. Booking is simple and fast. 
 
 PIC
   
@@ -18,7 +18,7 @@ I explain the website features below.
 
 - **Navigation bar**
   - This section will allow the user to easily navigate from page to page across all devices without having any issues. The full responsive navigation bar includes links to the Home page, Pricelist and Contact us page and is identical in each page to allow for easy navigation. 
-  - The active page appears orange, which highlight it from the background. 
+  - The active page appears with orange, which highlights it from the background. 
 
 PIC
 
@@ -27,8 +27,9 @@ PIC
 
 PIC
 
-- **Book an appoinment**
-  - This section grabs the users' attention. If they do not familiar with the site, then they can easily and quickly make an appointment.
+- **Book and make an appoinment section**
+  - This section grabs the users' attention. If they are not familiar with the site, then they can easily and quickly make an appointment.
+  - The form is easy to use. The placeholders show a great example of what their customer should write in the form, and the active page appears with an orange border, which highlights it.
 
 PIC
 
@@ -48,7 +49,7 @@ PIC
 PIC
 
 - **Make an appointment section**
-  - This form is handy and easy to use. The placeholders show an excellent example of what their customer should write in the form.
+  - This form is easy to use. The placeholders show a great example of what their customer should write in the form, and the active page appears with an orange border, which highlights it.
 
 PIC
 
@@ -60,7 +61,7 @@ PIC
 
 ## Testing
 
-I tested my codes continuously with the W3C validator and CSS Validator during my work. The biggest issue was the responsive design of the navigation system. So the navigation bar works perfectly, the book appointment link work as intended, section form is working, and the footer links open in a new tab. 
+I tested my codes continuously with the W3C validator and CSS Validator during my work. The biggest issue was the responsive design of the navigation system. So the navigation bar works perfectly, the book appointment link works as intended, section form is working, and the footer links open in a new tab. 
   
 
 **Fixed bugs** 
