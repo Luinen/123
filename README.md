@@ -62,9 +62,9 @@ I explain the website features below.
 
 ## Testing
 
-I tested my codes continuously with the W3C validator and CSS Validator during my work. The biggest issue was the responsive design of the navigation system. So the navigation bar works perfectly, the book appointment link works as intended, section form is working, and the footer links open in a new tab. 
+I tested my codes continuously with the W3C validator and CSS Validator during my work. The biggest issue was the responsive design of the navigation system for mobile version. Halfway through the project, I decided to give a new navigation bar, because the first version caused too many bugs. The navigation bar works and is more responsive than the previous version, the book appointment link redirects to the contact page, the tables on the pricelist page work as intended, the footer links open in a new tab, The section form is working, and the users get a thank you message by clicking on the send button. If I were a user, who wanted to know more about this private hospital, then this site would give me every information. It is easy to spot the "book an appointment" div on the index page, and the users can learn more about the hospital services. The form helps the users to fill it out correctly and if they still have any concerns/questions, they can use the textarea. 
 
-#### Lighthouse testing
+#### **Lighthouse testing**
 
 I used lighthouse to check the performance of my home page for mobile devices and desktop.
 - I designed the site for the desktop version first, and I was happy to see everything was green on the first try.
@@ -72,7 +72,7 @@ I used lighthouse to check the performance of my home page for mobile devices an
 - Similar high green numbers on the mobile version, but slightly worse than on the desktop version. The pictures aspect ratio caused this difference. 
  ![lighthouse_mobile](assets/images/lighthouse_mobile.png)
 
-#### Validator Testing
+#### **Validator Testing**
 
 - **HTML**
   - Index page validation
@@ -131,7 +131,7 @@ I used lighthouse to check the performance of my home page for mobile devices an
   1. In the GitHub repository, navigate to the Settings tab
   2. From the source section drop-down menu, select the Master Branch
   3. Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
-The live link can be found here: 
+  4. The live link can be found here: 
 
 
 ## Credits
