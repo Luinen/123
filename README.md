@@ -63,19 +63,68 @@ I explain the website features below.
 ## Testing
 
 I tested my codes continuously with the W3C validator and CSS Validator during my work. The biggest issue was the responsive design of the navigation system. So the navigation bar works perfectly, the book appointment link works as intended, section form is working, and the footer links open in a new tab. 
-  
 
-**Fixed bugs** 
+#### Lighthouse testing
 
+I used lighthouse to check the performance of my home page for mobile devices and desktop.
+- I designed the site for the desktop version first, and I was happy to see everything was green on the first try.
+![lighthouse_desktop](assets/images/lighthouse_desktop.png)
+- Similar high green numbers on the mobile version, but slightly worse than on the desktop version. The pictures aspect ratio caused this difference. 
+ ![lighthouse_mobile](assets/images/lighthouse_mobile.png)
+
+#### Validator Testing
+
+- **HTML**
+  - Index page validation
+    - I did not delete some closing tag elements, for example, the list closing tag below. These were easy to fix and did not cause any significant issues.
+
+    ```
+    <h2> Taoiseach Clinic is the best private hospital in the capital.</h2></li>
+        <p>If you are familiar with our site, please book an appointment here or the <span>Contact Us</span> menu point:
+    ```
+
+    - I put the id in the span, and the content's left margin was clickable when I centred it. After I put in the parent element(div), it solved the problem.  
+
+  ```
+  <div>
+      <a href="contact.html">
+          <span id="book">Book an appointment</span></a>
+  </div>
+  ```
+
+  - Pricelist page valiadation
+    - no errors were returned when passing through the w3c validator
+
+  - Contact page validation
+    - I forgot to close the anchor element, so any time I clicked on the form (name, email or textarea), a link opened in a new tab. After I closed it, it did not cause more problems.
 
 ```
 <div>
-<a href=""></a>
+<a href="">
 </div>
 ```
+- After these mistakes were fixed, no errors were returned when passing through the official [W3c validator](https://validator.w3.org/)
 
-W3c validator
-CSS validator
+- **CSS**
+  - The page had an 8px default margin. First I tried to set the margins -8px to solve it, but later I realized that the solution is much easier and I wrote this:
+  ```
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  ```
+  - First time running the css validator I got 1 error and 1 warning message: 
+    - 85 Value Error : font-weight 700px is not a font-weight value : 700px
+    - 1 Imported style sheets are not checked in direct input and file upload modes 
+  ``` 
+  h4 {
+    color: #4b9193;
+    letter-spacing: 3px;
+    font-weight: 700px;
+  }
+  ```
+    - After I deleted the px, it solved the problem.
+  - After these mistakes were fixed, no errors were returned when passing through the official [Jigsaw](https://jigsaw.w3.org/css-validator/)
 
 ## Deployment  
 - The site was deployed to GitHub pages. The steps to deploy are as follows: 
